@@ -9,8 +9,10 @@ function App() {
   return (
     <div className="App">
       <GeolocationProvider>
-        <Header/>
-        <List />
+        <Header />
+        <div className="Body">
+          <List />
+        </div>
       </GeolocationProvider>
     </div>
   );

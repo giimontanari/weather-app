@@ -9,6 +9,9 @@
 # project
 yarn-error.log
 
+# cache
+.eslintcache
+
 # misc
 .DS_Store
 .cache

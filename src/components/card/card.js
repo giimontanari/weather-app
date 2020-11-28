@@ -1,20 +1,25 @@
 /* Bookstores */
 import React from "react"
 import Divider from "@material-ui/core/Divider"
+import moment from "moment"
 
 /* Styled Components */
-import { Wrapper } from "./cardStyle"
+import Wrapper from "./cardStyle"
 
 const Card = ({ weather }) => {
 
     const KelvinToCelsius = (temp) => {
         return (temp-273.15).toFixed(0)
     }
+
+    const ConvertDate = (date) => {
+        return moment(new Date(date * 1000)).format("DD/MM/YYYY");
+    }
     
     return (
         <Wrapper>
             <div className="card-container">
-                <h1 className="card-container-title">EL TIEMPO AHORA</h1>
+                <h1 className="card-container-title">{ConvertDate(weather.dt)}</h1>
                 <h3 className="card-container-temp">{KelvinToCelsius(weather.temp.day)}°</h3>
             </div>
             <div className="card-others">

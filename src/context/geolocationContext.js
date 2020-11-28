@@ -8,14 +8,14 @@ const API_KEY = "e9d0d195a4336ef6d447af5549072a6f"
 export const GeolocationContext = React.createContext()
 
 const GeolocationProvider = props => {
-    const [geolocation, setGeolocation] = useState("")
-    const [geoWeather, setGeoWeather] = useState("")
+    const [geolocation, setGeolocation] = useState()
+    const [geoWeather, setGeoWeather] = useState()
 
     const getWeather = async (geolocation) => {
-        console.log(geolocation)
         await axios(`http://api.openweathermap.org/data/2.5/onecall?lat=${geolocation.lat}&lon=${geolocation.lon}&lang=es&exclude=hourly,minutely&appid=${API_KEY}`)
             .then(response => {
                 setGeoWeather(response.data)
+                console.log(response.data)
             })
     }
 
@@ -31,7 +31,7 @@ const GeolocationProvider = props => {
         getLocationAndWeather();
     }, [])
 
-  return <GeolocationContext.Provider value={{ geolocation, setGeolocation, geoWeather, setGeoWeather }}>{props.children}</GeolocationContext.Provider>
+  return <GeolocationContext.Provider value={{ geolocation, setGeolocation, geoWeather, setGeoWeather, getWeather }}>{props.children}</GeolocationContext.Provider>
 }
 
 export default GeolocationProvider

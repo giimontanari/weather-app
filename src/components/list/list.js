@@ -11,12 +11,12 @@ const List = () => {
     console.log(geoWeather)
     return (
         <Wrapper>
-            <Grid container direction="column" justify="center">
+            <Grid container direction="row" alignItems="center" spacing={2}>
                 {geoWeather && geoWeather.daily.map(item => 
-                    <Grid item xs={12} md={5}> 
-                        < Card weather={item} />
-                    </Grid>
-                )} 
+                    <Grid item xs={12} sm={6}>
+                        <Card weather={item} />
+                   </Grid>
+                )}
             </Grid>
         </Wrapper>
     )  

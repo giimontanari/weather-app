@@ -2,17 +2,12 @@
 import styled from "styled-components"
 import Card from "@material-ui/core/Card"
 
-/**
- * Documented component Wrapper
- * @component
- * @returns
- *   Wrapper is container of card
- */
-export const Wrapper = styled(Card)`
+const Wrapper = styled(Card)`
   display: flex;
   border-radius: 5%;
   width: 100%;
-  
+  box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.2);
+
   .card {
     &-container {
       display: flex;
