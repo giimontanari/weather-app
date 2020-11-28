@@ -1,7 +1,9 @@
 /* Bookstores */
 import React from "react"
+import PropTypes from "prop-types"
 import Divider from "@material-ui/core/Divider"
 import moment from "moment"
+import 'moment/locale/es';
 
 /* Styled Components */
 import Wrapper from "./cardStyle"
@@ -13,7 +15,7 @@ const Card = ({ weather }) => {
     }
 
     const ConvertDate = (date) => {
-        return moment(new Date(date * 1000)).format("DD/MM/YYYY");
+        return moment(new Date(date * 1000)).format("dddd, DD MMMM, YYYY");
     }
     
     return (
@@ -27,10 +29,18 @@ const Card = ({ weather }) => {
                 <Divider light variant="middle" className="card-others-divider"/>
                 <span className="card-others-detail">Máx: {KelvinToCelsius(weather.temp.max)}°</span>
                 <Divider light variant="middle" className="card-others-divider"/>
-                <span className="card-others-detail">Humedad: {weather.humidity}%</span>
+                <span className="card-others-detail">Hum: {weather.humidity}%</span>
             </div>
         </Wrapper>
     )
 }
 
 export default Card
+
+Card.propTypes = {
+    weather: PropTypes.shape({
+      dt: PropTypes.number,
+      temp: PropTypes.object,
+      humidity: PropTypes.number
+    }).isRequired
+}

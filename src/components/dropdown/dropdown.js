@@ -1,27 +1,29 @@
 /* Bookstores */
 import React, { useState, useContext } from "react"
 import { GeolocationContext } from "../../context/geolocationContext"
-import Wrapper from "./dropdownStyle"
 import MenuItem from "@material-ui/core/MenuItem"
+
+/* Mocks */
 import cities from "../../mocks/cities"
+
+/* Styled Components */
+import Wrapper from "./dropdownStyle"
 
 const Dropdown = () => {
     const [city, setCity] = useState()
-    const { getWeather, setGeolocation } = useContext(GeolocationContext)
+    const { setGeolocation } = useContext(GeolocationContext)
     
     const onChangeCity = (value) => {
-        setCity(value.name)
+        setCity(value)
         setGeolocation(value)
-        getWeather(value)
     }
 
     return (
         <Wrapper value={city} onChange={e => onChangeCity(e.target.value)}>
             {cities.map(element => {
-                return <MenuItem value={element}>{element.city}</MenuItem>
+                return <MenuItem key={element.city} value={element}>{element.city}</MenuItem>
             })}
         </Wrapper>
-        
     )
 }
 

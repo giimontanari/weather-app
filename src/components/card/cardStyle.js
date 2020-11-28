@@ -23,7 +23,7 @@ const Wrapper = styled(Card)`
 
        &-temp {
          font-size: 60px;
-         color: #000;
+         color: #1a237e;
          font-weight: 500;
          margin: 0 30px 20px 45px;
         }

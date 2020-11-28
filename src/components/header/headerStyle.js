@@ -27,8 +27,7 @@ const Wrapper = styled.nav`
       color: #fff;
       margin-right: 30px;
     }
-  }
-  
+  } 
 `
 
 export default Wrapper

@@ -28,11 +28,11 @@ const cities = [
       lon: 37.6172
   },
   {
-      city: "Río de Janeiro",
-      regionName: "Río de Janeiro",
-      country: "Brasil",
-      latitude: -22.9035,
-      longitude: -43.2096
+      city: "Distrito Federal",
+      regionName: "CDMX",
+      country: "México",
+      lat: 19.42847,
+      lon: -99.12766
   }
 ]
 

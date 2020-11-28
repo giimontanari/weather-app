@@ -1,8 +1,10 @@
 /* Bookstores */
 import React, { useContext } from "react"
-import Wrapper from "./headerStyle"
 import { GeolocationContext } from "../../context/geolocationContext"
 import Dropdown from "../dropdown/dropdown"
+
+/* Styled Components */
+import Wrapper from "./headerStyle"
 
 const Header = () => {
     const { geolocation } = useContext(GeolocationContext)
