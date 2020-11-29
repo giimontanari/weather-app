@@ -1,9 +1,9 @@
 import React from "react"
 import renderer from 'react-test-renderer';
-import List from "./list"
+import ListOfCard from "./listOfCard"
 import { GeolocationContext } from "../../context/geolocationContext"
 
-describe("Check list structure with object required", () => {
+describe("Check list of card structure with object required", () => {
     
   const jsGeoWeather = {
     daily: [
@@ -22,7 +22,7 @@ describe("Check list structure with object required", () => {
   it('renders correctly', () => {
     
       const tree = renderer
-        .create(<GeolocationContext.Provider value={{ geoWeather: jsGeoWeather }}><List /></GeolocationContext.Provider>)
+        .create(<GeolocationContext.Provider value={{ geoWeather: jsGeoWeather }}><ListOfCard /></GeolocationContext.Provider>)
           .toJSON();
         
         expect(tree).toMatchSnapshot();

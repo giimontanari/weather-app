@@ -58,10 +58,10 @@ exports[`Check App structure renders correctly 1`] = `
     className="Body"
   >
     <div
-      className="sc-gsTCUz duZxYP"
+      className="sc-gsTCUz llaIj"
     >
       <div
-        className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-align-items-xs-center"
+        className="MuiGrid-root grid-center MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-align-items-xs-center"
       />
     </div>
   </div>

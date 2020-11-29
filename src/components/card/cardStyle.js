@@ -7,18 +7,32 @@ const Wrapper = styled(Card)`
   border-radius: 5%;
   width: 100%;
   box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.2);
+  min-width: 200px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 
   .card {
     &-container {
       display: flex;
       flex-direction: column;
       width: 60%;
-      
-       &-title {
-         font-size: 14px;
+
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+
+      &-title {
+         font-size: 16px;
          color: #000;
          font-weight: 500;
-         margin-left: 10px;
+         margin-left: 30px;
+         text-align: left;
+
+          @media (max-width: 768px) {
+            margin-left: 10px;
+          }
         }
 
        &-temp {
@@ -33,7 +47,11 @@ const Wrapper = styled(Card)`
       display: flex;
       flex-direction: column;
       width: 40%;
-      
+
+       @media (max-width: 768px) {
+        width: 100%;
+      }
+
       &-detail {
         font-size: 14px;
         color: #000;

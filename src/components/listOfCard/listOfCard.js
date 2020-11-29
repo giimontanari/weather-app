@@ -5,16 +5,16 @@ import { GeolocationContext } from "../../context/geolocationContext"
 import Card from "../card/card"
 
 /* Styled Components */
-import Wrapper from "./listStyle"
+import Wrapper from "./listOfCardStyle"
 
-const List = () => {
+const ListOfCard = () => {
     const { geoWeather } = useContext(GeolocationContext)
    
     return (
         <Wrapper>
-            <Grid container direction="row" alignItems="center" spacing={2}>
+            <Grid container direction="row" alignItems="center" spacing={2} className="grid-center">
                 {geoWeather && geoWeather.daily.map(item => 
-                    <Grid key={Math.random()} item xs={12} sm={6}>
+                    <Grid key={Math.random()} item xs={7} sm={7}>
                         <Card key={item.city} weather={item} />
                    </Grid>
                 )}
@@ -23,4 +23,4 @@ const List = () => {
     )  
 }
 
-export default List
+export default ListOfCard

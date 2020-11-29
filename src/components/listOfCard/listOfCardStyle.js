@@ -6,6 +6,11 @@ export const Wrapper = styled.div`
   height: 100%;
   padding: 70px;
   justify-content: center;
+
+  .grid-center {
+    display: flex;
+    justify-content: center;
+  }
 `
 
 export default Wrapper

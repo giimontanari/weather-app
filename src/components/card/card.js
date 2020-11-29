@@ -14,7 +14,12 @@ const Card = ({ weather }) => {
     }
 
     const ConvertDate = (date) => {
-        return moment(new Date(date * 1000)).format("dddd, DD MMMM, YYYY");
+        let today = moment(new Date()).format("dddd DD MMMM, YYYY")
+        let day = moment(new Date(date * 1000)).format("dddd DD MMMM, YYYY")
+        if (today === day) {
+           return "EL TIEMPO AHORA"
+        }
+        return day
     }
     
     return (
@@ -24,11 +29,11 @@ const Card = ({ weather }) => {
                 <h3 className="card-container-temp">{KelvinToCelsius(weather.temp.day)}°</h3>
             </div>
             <div className="card-others">
-                <span className="card-others-detail">Min: {KelvinToCelsius(weather.temp.min)}°</span>
+                <span className="card-others-detail">Temp. Min: {KelvinToCelsius(weather.temp.min)}°</span>
                 <Divider light variant="middle" className="card-others-divider"/>
-                <span className="card-others-detail">Máx: {KelvinToCelsius(weather.temp.max)}°</span>
+                <span className="card-others-detail">Temp. Máx: {KelvinToCelsius(weather.temp.max)}°</span>
                 <Divider light variant="middle" className="card-others-divider"/>
-                <span className="card-others-detail">Hum: {weather.humidity}%</span>
+                <span className="card-others-detail">Humedad: {weather.humidity}%</span>
             </div>
         </Wrapper>
     )

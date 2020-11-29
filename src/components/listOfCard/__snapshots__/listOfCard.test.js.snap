@@ -1,17 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Check list structure with object required renders correctly 1`] = `
+exports[`Check list of card structure with object required renders correctly 1`] = `
 <div
-  className="sc-gsTCUz duZxYP"
+  className="sc-gsTCUz llaIj"
 >
   <div
-    className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-align-items-xs-center"
+    className="MuiGrid-root grid-center MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-align-items-xs-center"
   >
     <div
-      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6"
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-7 MuiGrid-grid-sm-7"
     >
       <div
-        className="MuiPaper-root MuiCard-root sc-bdfBwQ kgpwnT MuiPaper-elevation1 MuiPaper-rounded"
+        className="MuiPaper-root MuiCard-root sc-bdfBwQ hjsYJw MuiPaper-elevation1 MuiPaper-rounded"
       >
         <div
           className="card-container"
@@ -19,7 +19,7 @@ exports[`Check list structure with object required renders correctly 1`] = `
           <h1
             className="card-container-title"
           >
-            miércoles, 05 septiembre, 2959
+            miércoles 05 septiembre, 2959
           </h1>
           <h3
             className="card-container-temp"
@@ -34,7 +34,7 @@ exports[`Check list structure with object required renders correctly 1`] = `
           <span
             className="card-others-detail"
           >
-            Min: 
+            Temp. Min: 
             49
             °
           </span>
@@ -44,7 +44,7 @@ exports[`Check list structure with object required renders correctly 1`] = `
           <span
             className="card-others-detail"
           >
-            Máx: 
+            Temp. Máx: 
             159
             °
           </span>
@@ -54,7 +54,7 @@ exports[`Check list structure with object required renders correctly 1`] = `
           <span
             className="card-others-detail"
           >
-            Hum: 
+            Humedad: 
             19
             %
           </span>

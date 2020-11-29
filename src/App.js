@@ -1,6 +1,6 @@
 /* Bookstores */
 import React from "react"
-import List from "./components/list/list"
+import ListOfCard from "./components/listOfCard/listOfCard"
 import Header from "./components/header/header"
 import GeolocationProvider from "./context/geolocationContext"
 import './App.css';
@@ -11,7 +11,7 @@ function App() {
       <GeolocationProvider>
         <Header />
         <div className="Body">
-          <List />
+          <ListOfCard />
         </div>
       </GeolocationProvider>
     </div>
