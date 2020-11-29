@@ -1,10 +1,12 @@
-# Getting Started with Create React App
+# Getting Started with Weather App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Esta App carga su ubicación actual (latitud y longitud) utilizando su ip, con esta información se obtiene el clima actual y el extendido para los proximos 7 días. Tambien puede seleccionar cualquiera de las 5 ciudades disponibles para consultar su pronostico actual y el extendido.
 
 ## Available Scripts
 
-In the project directory, you can run:
+### `yarn install`
+
+Run this command to install all the dependencies needed to make the project work
 
 ### `yarn start`
 
