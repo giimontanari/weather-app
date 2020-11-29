@@ -2,7 +2,7 @@
 
 exports[`Check card structure with object required renders correctly 1`] = `
 <div
-  className="MuiPaper-root MuiCard-root sc-bdfBwQ hjsYJw MuiPaper-elevation1 MuiPaper-rounded"
+  className="MuiPaper-root MuiCard-root sc-bdfBwQ cVYHJy MuiPaper-elevation1 MuiPaper-rounded"
 >
   <div
     className="card-container"
