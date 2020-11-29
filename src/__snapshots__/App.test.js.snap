@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Check App structure renders correctly 1`] = `
+<div
+  className="App"
+>
+  <div>
+    <nav
+      className="sc-hKgILt cQXCnz"
+    >
+      <div
+        className="header-container"
+      >
+        <div
+          className="MuiInputBase-root MuiInput-root MuiInput-underline sc-dlfnbm jYJVNm"
+          onClick={[Function]}
+        >
+          <div
+            aria-haspopup="listbox"
+            className="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onMouseDown={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <span
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "&#8203;",
+                }
+              }
+            />
+          </div>
+          <input
+            aria-hidden={true}
+            className="MuiSelect-nativeInput"
+            onAnimationStart={[Function]}
+            onChange={[Function]}
+            tabIndex={-1}
+          />
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSelect-icon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M7 10l5 5 5-5z"
+            />
+          </svg>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div
+    className="Body"
+  >
+    <div
+      className="sc-gsTCUz duZxYP"
+    >
+      <div
+        className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-align-items-xs-center"
+      />
+    </div>
+  </div>
+</div>
+`;

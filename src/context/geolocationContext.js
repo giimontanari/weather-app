@@ -31,9 +31,9 @@ const GeolocationProvider = props => {
             prevGeo.current = geolocation
             getWeather();
         }
-    }, [geolocation])
+    }, [geolocation]) // eslint-disable-line
 
-  return <GeolocationContext.Provider value={{ geolocation, geoWeather, getWeather, setGeolocation }}>{props.children}</GeolocationContext.Provider>
+  return <GeolocationContext.Provider value={{ geolocation, geoWeather, setGeolocation }}>{props.children}</GeolocationContext.Provider>
 }
 
 export default GeolocationProvider

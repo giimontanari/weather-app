@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Check list structure with object required renders correctly 1`] = `
+<div
+  className="sc-gsTCUz duZxYP"
+>
+  <div
+    className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-align-items-xs-center"
+  >
+    <div
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6"
+    >
+      <div
+        className="MuiPaper-root MuiCard-root sc-bdfBwQ kgpwnT MuiPaper-elevation1 MuiPaper-rounded"
+      >
+        <div
+          className="card-container"
+        >
+          <h1
+            className="card-container-title"
+          >
+            miércoles, 05 septiembre, 2959
+          </h1>
+          <h3
+            className="card-container-temp"
+          >
+            -60
+            °
+          </h3>
+        </div>
+        <div
+          className="card-others"
+        >
+          <span
+            className="card-others-detail"
+          >
+            Min: 
+            49
+            °
+          </span>
+          <hr
+            className="MuiDivider-root card-others-divider MuiDivider-middle MuiDivider-light"
+          />
+          <span
+            className="card-others-detail"
+          >
+            Máx: 
+            159
+            °
+          </span>
+          <hr
+            className="MuiDivider-root card-others-divider MuiDivider-middle MuiDivider-light"
+          />
+          <span
+            className="card-others-detail"
+          >
+            Hum: 
+            19
+            %
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

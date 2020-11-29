@@ -9,7 +9,6 @@ import 'moment/locale/es';
 import Wrapper from "./cardStyle"
 
 const Card = ({ weather }) => {
-
     const KelvinToCelsius = (temp) => {
         return (temp-273.15).toFixed(0)
     }
